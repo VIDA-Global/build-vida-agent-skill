@@ -1,0 +1,5 @@
+interface:
+  display_name: "Build Vida Agents"
+  short_description: "Build and prove complete Vida Agents"
+  brand_color: "#0075FF"
+  default_prompt: "Use $build-vida-agents to build and verify a Vida Agent for this software and workflow."

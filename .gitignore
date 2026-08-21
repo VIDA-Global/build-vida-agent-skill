@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+
+# Secrets and local credentials must never enter this repository.
+.env
+.env.*
+*.key
+*.pem
+
+# Per-run evidence, recordings, exports, and generated customer artifacts.
+agent-builds/
