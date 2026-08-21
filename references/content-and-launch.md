@@ -65,6 +65,13 @@ Use Vida branding, Vida logos, `partners@vida.io`, and Vida-specific calls to ac
 - Check alignment and overflow at full resolution in every independently composed aspect ratio.
 - Do not center-crop a horizontal master to create vertical social output.
 
+Treat every marker/icon plus label as one layout component, not as independently positioned shapes:
+
+- Define one row box and derive both the marker and label position from it. Do not hard-code separate marker and text Y coordinates.
+- For a single-line label, align the marker's optical center to the visible glyph bounding box center within 2 pixels at final master resolution. For a multiline label, align it to the first line's visible cap-height center unless the design explicitly uses another documented anchor.
+- Do not assume a text renderer's requested Y coordinate is the visible glyph top or center. ImageMagick `-annotate`, FFmpeg `drawtext`, SVG, Canvas, and browser text all apply font metrics differently. Measure the rendered label or use a flex/grid row with explicit center alignment, then place the marker from that measured result.
+- Generate a layout-debug still with row bounds and centerlines before rendering the complete video. Inspect a full-resolution crop of every repeated marker/list variant; a contact sheet scaled down to overview size is not sufficient alignment evidence.
+
 ## Narration
 
 For Vida marketing/demo video, default to ElevenLabs `eleven_v3` unless the user specifies another model or voice. Default voice is Liz (`uMM5TEnpKKgD758knVJO`) unless the user/customer chooses differently.
@@ -95,7 +102,7 @@ Always export a version with no TTS/audio stream so the user can record or repla
 - Preserve narrated and silent masters, scripts, captions, storyboard, selected take, source recordings, render source, contact sheets, and production manifest.
 - Normalize final narration near -16 LUFS with a safe true-peak ceiling, then decode and inspect every export.
 
-QA every master for duration, dimensions, frame rate, codecs, audio-stream presence/absence, loudness, true peak, black frames, legibility, alignment, pacing, redaction, claim accuracy, and CTA wording. For real-customer footage, inspect representative full-resolution frames from every scene plus a dense contact sheet; a small overview image alone is not a privacy review.
+QA every master for duration, dimensions, frame rate, codecs, audio-stream presence/absence, loudness, true peak, black frames, legibility, alignment, pacing, redaction, claim accuracy, and CTA wording. Alignment QA must include measured full-resolution crops of repeated components such as bullets, icons, labels, cards, and captions—not only visual review of a downscaled contact sheet. For real-customer footage, inspect representative full-resolution frames from every scene plus a dense contact sheet; a small overview image alone is not a privacy review.
 
 ## Agent Canvas / landing page
 
