@@ -12,4 +12,4 @@ Contributions should make the skill more reliable across real Vida Agent builds 
 6. Validate the complete skill with Codex's `skill-creator/scripts/quick_validate.py`.
 7. Test meaningful behavior and observable outcomes. Avoid brittle tests that merely assert prose or heading text.
 
-When a real build exposes a rough edge, record the evidence and classify it before changing the skill: skill guidance, Vida API schema/docs, runtime behavior, Browser Harness, or agent process. Prefer the narrowest correction supported by that evidence.
+When a real build exposes a rough edge, record the evidence and classify it before changing the skill: skill guidance, Vida API contract or generated reference, platform/runtime behavior, or agent process. Prefer the narrowest correction supported by that evidence and follow the publishing protocol in `SKILL.md`.

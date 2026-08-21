@@ -13,7 +13,7 @@ Classify a finding by its real owner. Do not turn every process mistake into an 
 
 | Finding ID | Classification | Evidence | Impact | Suggested improvement | Status |
 | --- | --- | --- | --- | --- | --- |
-| F-001 | Skill instruction / API schema / API guide / Runtime / Browser Harness / Agent process | | | | Open |
+| F-001 | Skill instruction / Vida API contract or generated reference / Platform runtime / Agent process | | | | Open |
 
 ## Publication review
 

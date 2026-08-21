@@ -96,6 +96,33 @@ Completion means every selected deliverable passes its gate and every public cla
 - representative tests and destination readback;
 - artifact links and redaction/publication classification;
 - active versus pending user approvals;
-- unresolved limitations and whether they are skill guidance, API schema/docs, runtime behavior, or agent-process issues.
+- unresolved limitations and whether they are skill guidance, Vida API contract/generated reference,
+  platform/runtime behavior, or agent-process issues.
 
 If a user action remains, leave the affected deliverable pending and state the precise next action. Do not present a partial package as complete.
+
+## Improvement feedback
+
+Use the run's evidence ledger when a real build exposes a reusable gap. Finish the requested build
+first when that remains safe and practical; do not interrupt successful work merely to publish
+feedback.
+
+Record a sanitized reproduction: the user's goal, attempted workflow, expected and observed
+behavior, relevant evidence, workaround, and a realistic acceptance or regression scenario. Never
+include tokens, credentials, customer data, private hosts, or identifying account details.
+
+Route feedback only as follows:
+
+- `build-vida-agent` instructions or Agent-build process:
+  `https://github.com/VIDA-Global/build-vida-agent-skill`
+- `vida-api` instructions or workflow guidance: `https://github.com/VIDA-Global/vida-skill`
+- Vida API contract, generated API reference, permissions, or platform/runtime behavior:
+  `https://github.com/VIDA-Global/vida.live`
+
+Search existing issues and pull requests before publishing. Use an issue when ownership, root cause,
+or the correct fix is uncertain. Open a draft pull request only for a narrow, verified correction
+with a realistic regression scenario. Do not create either automatically: obtain the user's
+authorization for the external write and disclose that the report or change was agent-authored.
+Link any resulting issue or pull request from the evidence ledger and completion report. Findings
+outside the routes above remain in the evidence ledger and are reported to the user; do not publish
+them to another repository under this protocol.
