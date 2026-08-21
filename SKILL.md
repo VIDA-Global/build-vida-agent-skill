@@ -115,14 +115,14 @@ Route feedback only as follows:
 
 - `build-vida-agent` instructions or Agent-build process:
   `https://github.com/VIDA-Global/build-vida-agent-skill`
-- `vida-api` instructions or workflow guidance: `https://github.com/VIDA-Global/vida-skill`
-- Vida API contract, generated API reference, permissions, or platform/runtime behavior:
-  `https://github.com/VIDA-Global/vida.live`
+- `vida-api` instructions or user-visible friction with the Vida API contract, generated reference,
+  permissions, or platform behavior: `https://github.com/VIDA-Global/vida-skill`
 
 Search existing issues and pull requests before publishing. Use an issue when ownership, root cause,
 or the correct fix is uncertain. Open a draft pull request only for a narrow, verified correction
 with a realistic regression scenario. Do not create either automatically: obtain the user's
 authorization for the external write and disclose that the report or change was agent-authored.
-Link any resulting issue or pull request from the evidence ledger and completion report. Findings
-outside the routes above remain in the evidence ledger and are reported to the user; do not publish
-them to another repository under this protocol.
+Link any resulting issue or pull request from the evidence ledger and completion report. Describe
+observed public behavior without speculating about private implementation details. Findings that
+cannot be safely reported in either public skill repository remain in the evidence ledger and are
+reported privately to the user; do not publish them elsewhere under this protocol.
