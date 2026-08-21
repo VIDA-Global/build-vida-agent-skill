@@ -1,9 +1,9 @@
 ---
-name: build-vida-agents
+name: build-vida-agent
 description: Build, configure, test, and optionally launch a Vida Agent for a specified software workflow or an optionally researched market opportunity. Use when a Vida user or employee wants a working Agent and may also want browser helpers, schedules, Canvas, demo videos, landing pages, or launch content—not for ordinary operation of an already-finished Agent.
 ---
 
-# Build Vida Agents
+# Build Vida Agent
 
 Turn a software/workflow opportunity into the exact Vida Agent package the user wants, with evidence that every claimed capability works. Start from a known target or optional market discovery; do not force BuiltWith research into direct builds.
 

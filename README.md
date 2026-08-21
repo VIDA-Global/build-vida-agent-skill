@@ -1,6 +1,6 @@
-# Build Vida Agents
+# Build Vida Agent
 
-`build-vida-agents` is a Codex skill for turning a software workflow into a working, evidence-backed [Vida](https://vida.io) Agent.
+`build-vida-agent` is a Codex skill for turning a software workflow into a working, evidence-backed [Vida](https://vida.io) Agent.
 
 It can start with a known workflow, help select an opportunity through optional market research, or extend an existing Agent with browser helpers, proactive schedules, Canvas, demo videos, landing pages, and launch content. The skill keeps those outputs composable: a simple build does not become a full campaign unless the user asks for one.
 
@@ -38,14 +38,14 @@ The skill uses public Vida APIs for Agent work and Vida-issued automation sessio
 Clone the repository as the installed skill directory:
 
 ```bash
-git clone https://github.com/VIDA-Global/build-vida-agents-skill.git ~/.codex/skills/build-vida-agents
+git clone https://github.com/VIDA-Global/build-vida-agent-skill.git ~/.codex/skills/build-vida-agent
 ```
 
 For local development, keep a workspace checkout and symlink the installed skill to it:
 
 ```bash
-git clone https://github.com/VIDA-Global/build-vida-agents-skill.git /path/to/workspace/build-vida-agents-skill
-ln -s /path/to/workspace/build-vida-agents-skill ~/.codex/skills/build-vida-agents
+git clone https://github.com/VIDA-Global/build-vida-agent-skill.git /path/to/workspace/build-vida-agent-skill
+ln -s /path/to/workspace/build-vida-agent-skill ~/.codex/skills/build-vida-agent
 ```
 
 Restart or open a fresh Codex session if the skill catalog does not refresh immediately.
@@ -53,15 +53,15 @@ Restart or open a fresh Codex session if the skill catalog does not refresh imme
 ## Example prompts
 
 ```text
-Use $build-vida-agents to build an Agent that follows up on stale quotes in our field-service software. Start staged, use synthetic data, and create the browser helpers and a paused daily schedule.
+Use $build-vida-agent to build an Agent that follows up on stale quotes in our field-service software. Start staged, use synthetic data, and create the browser helpers and a paused daily schedule.
 ```
 
 ```text
-Use $build-vida-agents to research a strong software ecosystem for our ICP, pick one workflow, and build the proof. Include a customer demo, a Vida platform video, and the Agent Canvas landing page.
+Use $build-vida-agent to research a strong software ecosystem for our ICP, pick one workflow, and build the proof. Include a customer demo, a Vida platform video, and the Agent Canvas landing page.
 ```
 
 ```text
-Use $build-vida-agents to add a public-safe demo video and launch assets to this existing Agent. Do not change its live configuration.
+Use $build-vida-agent to add a public-safe demo video and launch assets to this existing Agent. Do not change its live configuration.
 ```
 
 ## Operating model
