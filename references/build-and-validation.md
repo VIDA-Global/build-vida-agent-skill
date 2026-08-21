@@ -36,7 +36,7 @@ Gate: one bounded workflow has an observable start, outcome, and destination rea
 
 Use the Browser ticket flow from `intake-and-access.md` for human login, MFA, CAPTCHA, consent, or payment. Use a fresh Vida automation session and local Browser Harness after authentication.
 
-If Browser Harness is absent, discover and install the current supported local package in an isolated environment when local installation is within scope. Verify the installed version and remote-session attach path. Do not replace it with direct container automation.
+If Browser Harness is absent, install the supported Python CLI in an isolated environment when local installation is within scope (for example, `uv tool install browser-harness`). Verify the installed version and remote-session attach path. The unrelated npm package with the same name is not the Vida/Computer automation tool. Do not replace Browser Harness with direct container automation.
 
 For a sales/demo build, seed a credible synthetic operating environment before public recording:
 
@@ -63,6 +63,8 @@ Define the claim, proof moments, and redaction plan before recording.
 - Add business context and timestamped commentary so helper generation can distinguish incidental requests from the real operation.
 
 Treat the evidence recording as technical source material. Capture a separate rehearsed publication take later when waits, retries, or debugging make it poor marketing footage.
+
+For a deliverable extension on a real customer's existing Agent, do not upgrade, replace, or restart its Computer merely to obtain marketing footage unless the user separately authorizes that operational change. If a fresh Vida automation session cannot attach, inventory finalized workflow recordings through public Vida APIs and use an existing recording when its domain, timestamp, workflow, and provenance match the claim. Download source artifacts through public workspace/recording APIs, retain their recording ID and redaction metadata, and keep raw customer footage private. A finalized recording is a source fallback, not permission to expose everything visible in it.
 
 Gate: the recording visibly proves the workflow and contains sufficient sanitized evidence for the intended helper strategy.
 

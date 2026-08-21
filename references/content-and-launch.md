@@ -41,7 +41,16 @@ Use the target workflow as evidence of platform power, not as a generic AI monta
 - Show meaningful navigation, filtering, scrolling, record selection, action, save/submit, and visible result.
 - Remove or compress dead time and loading. Do not leave an unchanged product frame under a long narration passage.
 - Avoid continuous fractional zoom/pan effects that create jitter. Use stable frames, intentional cuts, and smooth short opacity transitions.
-- Blur/redact operator names, real contacts, phone numbers, credentials, account/room IDs, and unrelated customer information even when the main fixture is synthetic.
+- Blur/redact operator names, real contacts, phone numbers, emails, addresses, credentials, account/room/Task IDs, vehicle/VIN identifiers, person-linked financial figures, salesperson identity, and unrelated customer information even when the main fixture is synthetic.
+
+For real-customer source material, use this privacy order:
+
+1. exclude the sensitive screen or choose a safer proof view;
+2. crop away browser chrome, account switchers, Inbox lists, headers, and unrelated panels;
+3. replace sensitive fields with a consistent neutral privacy treatment that covers the complete field or region;
+4. use strong tracked defocus only for surrounding context that must remain visible.
+
+Do not rely on a small name blur while related phone, address, VIN, payment, equity, or operator data remains visible. Raw blur can also inherit bright source colors and look like a rendering defect; prefer a neutral branded mask for fixed sensitive fields. Do not place isolated unexplained boxes over browser tabs or headers—crop those regions out. Track masks across motion, review scene boundaries and dense contact sheets at full resolution, and search every export for known identities and identifiers. Keep unredacted captures private and label only reviewed derivatives public-safe.
 
 ## Vida visual system
 
@@ -86,7 +95,7 @@ Always export a version with no TTS/audio stream so the user can record or repla
 - Preserve narrated and silent masters, scripts, captions, storyboard, selected take, source recordings, render source, contact sheets, and production manifest.
 - Normalize final narration near -16 LUFS with a safe true-peak ceiling, then decode and inspect every export.
 
-QA every master for duration, dimensions, frame rate, codecs, audio-stream presence/absence, loudness, true peak, black frames, legibility, alignment, pacing, redaction, claim accuracy, and CTA wording.
+QA every master for duration, dimensions, frame rate, codecs, audio-stream presence/absence, loudness, true peak, black frames, legibility, alignment, pacing, redaction, claim accuracy, and CTA wording. For real-customer footage, inspect representative full-resolution frames from every scene plus a dense contact sheet; a small overview image alone is not a privacy review.
 
 ## Agent Canvas / landing page
 

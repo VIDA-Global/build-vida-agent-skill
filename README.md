@@ -14,6 +14,7 @@ It can start with a known workflow, help select an opportunity through optional 
 - Configures and validates Vida Agents, Computers, communications, and paused-first schedules.
 - Builds Agent Canvas landing pages and two distinct video stories: customer proof and Vida platform proof.
 - Produces silent masters, directed Eleven v3 narration, captions, scripts, and reusable launch content when selected.
+- Reuses finalized public-API recording evidence for video-only extensions without disturbing a customer's running Computer, and applies full-region privacy controls to real-customer footage.
 - Maintains a run manifest, evidence ledger, and work log so every claim maps to proof.
 
 ## Entry modes
