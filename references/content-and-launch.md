@@ -97,10 +97,12 @@ Always export a version with no TTS/audio stream so the user can record or repla
 - Use fewer scenes with enough dwell to understand each proof point.
 - Customer copy must be specific to the workflow and economic problem.
 - Include one accurate sentence that Vida can automate comparable workflows in other browser-accessible software.
-- For Vida demand-generation content, default CTA: `Talk to Vida about deploying an agent like this for your business.`
+- For Vida demand-generation content, canonical CTA: `Talk to Vida about deploying an agent like this for your business.` Never insert an article before `Vida`; `Talk to the Vida` is incorrect brand copy.
 - Default contact email for Vida marketing: `partners@vida.io`, unless the user supplies another destination.
 - Preserve narrated and silent masters, scripts, captions, storyboard, selected take, source recordings, render source, contact sheets, and production manifest.
 - Normalize final narration near -16 LUFS with a safe true-peak ceiling, then decode and inspect every export.
+
+Treat approved CTA copy as a locked production value, not prose to regenerate independently. Store it once in the video configuration and derive the spoken script, end card, captions, metadata, and manifest from that value. Before TTS/rendering and again before delivery, run `scripts/validate-video-copy.sh <video-source-directory>` (or pass `--cta` for a user-approved custom CTA). The validator must pass, and the final full-resolution end frame plus decoded narration must match the same approved copy. Do not rely only on a contact-sheet glance or a general instruction to check CTA wording.
 
 QA every master for duration, dimensions, frame rate, codecs, audio-stream presence/absence, loudness, true peak, black frames, legibility, alignment, pacing, redaction, claim accuracy, and CTA wording. Alignment QA must include measured full-resolution crops of repeated components such as bullets, icons, labels, cards, and captions—not only visual review of a downscaled contact sheet. For real-customer footage, inspect representative full-resolution frames from every scene plus a dense contact sheet; a small overview image alone is not a privacy review.
 
